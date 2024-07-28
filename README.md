@@ -17,7 +17,7 @@ git clone https://github.com/Karit08/Back-end-HubEntretenimiento.git
 
 2. Change to the project directory:
 
-cd yourrepository/MovieHub
+cd youRepository/Back-end-HubEntretenimiento
 
 3. Install the dependencies:
 
