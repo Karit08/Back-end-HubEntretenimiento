@@ -7,7 +7,7 @@
 Este proyecto es un hub de entretenimiento en el cual se muestran peliculas y series a las cuales el usuario las puede agregar a favoritos si lo desea.
 
 ### 2. Requerimientos tecnicos -
-Conocimientos SQL
+Conocimientos SQL  
 Conocimiento de servidores
 
 ### 3. ¿Como instalar?
@@ -17,7 +17,7 @@ git clone https://github.com/Karit08/Back-end-HubEntretenimiento.git
 
 2. Change to the project directory:
 
-cd yourrepository/MovieHub
+cd youRepository/Back-end-HubEntretenimiento
 
 3. Install the dependencies:
 
@@ -26,11 +26,11 @@ npm install
 4. Create a .env file in the root of the project and add your environment variables following the .env.template
 
 
-DB_User="User to database"
-DB_Password="Password to database"
-DB_Server="Server name"
-DB_Database="Server name"
-DB_Port="Server port"
+DB_User="User to database"  
+DB_Password="Password to database"  
+DB_Server="Server name"  
+DB_Database="Server name"  
+DB_Port="Server port"  
 Port="Port number"
 
 ### 4. Capturas de pantalla 
