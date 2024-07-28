@@ -13,7 +13,7 @@ Conocimiento de servidores
 ### 3. ¿Como instalar?
 1. Clone the repository:
 
-git clone https://github.com/EderGodinez/MovieHub_Back_Express.git
+git clone https://github.com/Karit08/Back-end-HubEntretenimiento.git
 
 2. Change to the project directory:
 
@@ -42,7 +42,7 @@ Base.
 ![imagen](./src/assets/image.png)
 
 #### 4.1 Routes
-Users Routes
+- Users Routes
 
     POST /users
 
@@ -68,43 +68,51 @@ Description: Delete a user by ID.
 Request: None.
 Response: JSON message indicating success or failure.
 
-Series Routes
-POST /series
+- Series Routes
+
+    POST /series
 
 Description: Create a new series.
 Request: JSON body with series details.
 Response: JSON message indicating success or failure.
-GET /series
+
+    GET /series
 
 Description: Get all series.
 Request: None.
 Response: Array of Series.
-GET /series/:id
+
+    GET /series/:id
 
 Description: Get a series by ID.
 Request: None.
 Response: Series data.
-PUT /series/:id
+    
+    PUT /series/:id
 
 Description: Update a series by ID.
 Request: JSON body with series details.
 Response: JSON message indicating success or failure.
-DELETE /series/:id
+
+    DELETE /series/:id
 
 Description: Delete a series by ID.
 Request: None.
 Response: JSON message indicating success or failure.
-POST /series/episode
+    
+    POST /series/episode
 
 Description: Create a new episode.
 Request: JSON body with episode details.
 Response: JSON message indicating success or failure.
-DELETE /series/episode/:id
+    
+    DELETE /series/episode/:id
 
 Description: Delete an episode by ID.
 Request: None.
 Response: JSON message indicating success or failure.
-PATCH /series/episode/:id
+    
+    PATCH /series/episode/:id
 
 Description: Update an episode by ID.
 Request: JSON body with episode details.
