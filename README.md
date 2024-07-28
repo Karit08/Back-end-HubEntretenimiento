@@ -38,10 +38,11 @@ Port="Port number"
 Diagrama de entidad-relacion de Base de Datos.
 ![imagen](./src/assets/image.png)
 
-Base.
-![imagen](./src/assets/image.png)
+SQL Server.
+![imagen](./src/assets/BD.png)
 
 #### 4.1 Routes
+************************************************
 - Users Routes
 
     POST /users
@@ -49,6 +50,12 @@ Base.
 Description: Create a new user.
 Request: JSON body with user details.
 Response: JSON message indicating success or failure.
+    
+    GET /users
+
+Description: Get a all users.
+Request: None.
+Response: User data.
 
     GET /users/:id
 
@@ -68,6 +75,41 @@ Description: Delete a user by ID.
 Request: None.
 Response: JSON message indicating success or failure.
 
+*********************************************************
+- Movies Routes
+
+    POST /movies
+
+Description: Create a new movies.
+Request: JSON body with movies details.
+Response: JSON message indicating success or failure.
+
+    GET /movies
+
+Description: Get all movies.
+Request: None.
+Response: Array of movies.
+
+    GET /movies/:id
+
+Description: Get a movies by ID.
+Request: None.
+Response: Series data.
+    
+    PUT /movies/:id
+
+Description: Update a movies by ID.
+Request: JSON body with movies details.
+Response: JSON message indicating success or failure.
+
+    DELETE /movies/:id
+
+Description: Delete a series by ID.
+Request: None.
+Response: JSON message indicating success or failure.
+    
+
+*******************************************************
 - Series Routes
 
     POST /series
@@ -100,23 +142,80 @@ Description: Delete a series by ID.
 Request: None.
 Response: JSON message indicating success or failure.
     
-    POST /series/episode
 
-Description: Create a new episode.
-Request: JSON body with episode details.
+
+*******************************************************
+- Capitulos Routes
+
+    POST /capitulos
+
+Description: Create a new capitulos.
+Request: JSON body with capitulos details.
 Response: JSON message indicating success or failure.
-    
-    DELETE /series/episode/:id
 
-Description: Delete an episode by ID.
+    GET /capitulos
+
+Description: Get all capitulos.
+Request: None.
+Response: Array of capitulos.
+
+    GET /capitulos/:id
+
+Description: Get a capitulos by ID.
+Request: None.
+Response: Capitulos data.
+    
+    PUT /capitulos/:id
+
+Description: Update a capitulos by ID.
+Request: JSON body with capitulos details.
+Response: JSON message indicating success or failure.
+
+    DELETE /capitulos/:id
+
+Description: Delete a capitulos by ID.
 Request: None.
 Response: JSON message indicating success or failure.
-    
-    PATCH /series/episode/:id
 
-Description: Update an episode by ID.
-Request: JSON body with episode details.
+*******************************************************
+- Favoritos Routes
+
+    POST /favoritos
+
+Description: Create a new favoritos.
+Request: JSON body with favoritos details.
 Response: JSON message indicating success or failure.
+
+    GET /favoritos
+
+Description: Get all favoritos.
+Request: None.
+Response: Array of favoritos.
+    
+    GET /favoritos/user/:user_ID
+
+Description: GET an favoritos by user's ID .
+Request: None.
+Response: JSON message indicating success or failure.
+
+    GET /favoritos/:id
+
+Description: Get a favoritos by ID.
+Request: None.
+Response: Favoritos data.
+    
+    PUT /favoritos/:id
+
+Description: Update a favoritos by ID.
+Request: JSON body with favoritos details.
+Response: JSON message indicating success or failure.
+
+    DELETE /favoritos/:id
+
+Description: Delete a favoritos by ID.
+Request: None.
+Response: JSON message indicating success or failure.
+
 
 ### 5. Proceso que seguí para realizar el proyecto
 Me guie con el curso Bases de datos empresariales con el gestor Microsoft SQL Server 2019, el lenguaje T-SQL y Management Studio
